@@ -24,6 +24,9 @@ jobs:
         with:
           r-version: 'release'
 
+      - name: Install pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
       - name: Cache R packages
         uses: actions/cache@v4
         id: r-cache
