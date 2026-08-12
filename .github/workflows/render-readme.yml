@@ -1,5 +1,4 @@
-# .github/workflows/render-readme.yml
-name: Render README.Rmd
+name: Render README
 
 on:
   push:
@@ -7,57 +6,60 @@ on:
     paths:
       - 'README.Rmd'
       - '.github/workflows/render-readme.yml'
-  pull_request:
-    branches: [main]
-    paths:
-      - 'README.Rmd'
+
+# Avoid pointless concurrent runs on rapid pushes to main
+concurrency:
+  group: render-readme-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  render-readme:
+  render:
     runs-on: ubuntu-latest
+    # Don't trigger an infinite loop when the bot's own commit pushes to main
+    if: "!contains(github.event.head_commit.message, '[skip render]')"
+
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # need full history if you want git diff against previous commit,
+          # but a shallow default checkout is fine for just comparing working tree
+          fetch-depth: 1
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: 'release'
+          use-public-rspm: true  # pulls binary packages from Posit Package Manager (fast, no compiling)
 
-      - name: Install pandoc
+      - name: Set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Cache R packages
-        uses: actions/cache@v4
-        id: r-cache
+      - name: Install R package dependencies (cached)
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}-${{ hashFiles('.github/workflows/render-readme.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-r-
+          # extra-packages lets you avoid needing a DESCRIPTION file in the repo
+          extra-packages: |
+            any::rmarkdown
+            any::knitr
+          # cache-version bump invalidates cache manually if ever needed
+          cache-version: 1
 
-      - name: Install rmarkdown package
-        run: |
-          Rscript -e "if (!require('rmarkdown', quietly = TRUE)) install.packages('rmarkdown')"
+      - name: Render README.Rmd
+        run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "github_document", output_file = "README.md")'
 
-      - name: Render README.Rmd to README.md
+      - name: Commit and push if README.md changed
         run: |
-          Rscript -e "rmarkdown::render('README.Rmd', output_file='README.md', quiet=TRUE)"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Check for changes
-        id: git-check
-        run: |
-          if git diff --quiet; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "changes=true" >> $GITHUB_OUTPUT
+          if git diff --quiet -- README.md; then
+            echo "No changes to README.md, skipping commit."
+            exit 0
           fi
 
-      - name: Commit rendered README
-        if: github.event_name == 'push' && steps.git-check.outputs.changes == 'true'
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
           git add README.md
-          git commit -m "[ci skip] Update README.md from README.Rmd"
-          git push
+          git commit -m "Auto-render README.Rmd to README.md [skip render]"
+          git push origin HEAD:main
