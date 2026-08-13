@@ -5,7 +5,7 @@ repos:
     hooks:
     -   id: render-readme
         name: Render README.Rmd to README.md
-        entry: bash -c 'Rscript -e "rmarkdown::render(\"README.Rmd\", output_format = \"github_document\", output_file = \"README.md\")" && git add README.md'
+        entry: bash -c 'Rscript -e "rmarkdown::render(\"README.Rmd\", output_format = \"github_document\", output_file = \"README.md\")" && rm README.html && git add README.md'
         language: system
         files: '^README\.Rmd$'
         pass_filenames: false
