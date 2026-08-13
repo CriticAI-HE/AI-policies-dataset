@@ -1,0 +1,90 @@
+
+<!-- Render a md version by running -->
+
+<!-- Badges [![](https://img.shields.io/badge/)](https://doi.org/) -->
+
+# UK Universities’ AI Policy Documents Dataset
+
+This repository contains a dataset compiling academic governance
+documents detailing artificial intelligence policies and usage
+guidelines issued by universities across the United Kingdom. Compiled
+from public institutional sources (see datasources below), the
+collection includes formal policy and guidance statements addressing the
+use of AI tools in teaching, learning, assessment, and/or scholarly
+activities. Each document has been manually reviewed and annotated with
+metadata describing aspects of its contents, aims, audience and position
+on AI usage to allow for comparisons, systematic analysis and to inform
+decisions. Researchers and policymakers are the primary audience.
+
+## Contents
+
+- A dataset is a `csv` file containing 121 documents authored by 33
+  different universities, and 30 metadata variables.
+- Metadata
+
+## Datasources
+
+- Russell Group Universities
+
+- Universities and documents listed in the report: What UK university AI
+  policies actually do: A study of 96 institutions. (2026, May 21).
+  *HEPI*.
+  <https://www.hepi.ac.uk/reports/what-uk-university-ai-policies-actually-do-a-study-of-96-institutions/>
+
+- Documents listed in the Software Sustainability Institute’s
+  Collaboration Workshop 2026, and recorded in [this
+  document](https://hackmd.io/@ccamara/SySWWw5TWe).
+
+## Using and citing this work
+
+You are free to reuse this dataset under the Licence conditions. If you
+use this dataset in your work, please cite it as below:
+
+> Wang, C., & Cámara-Menoyo, C. (2026). UK Universities’ AI Policy
+> Documents Dataset $$Data set$$. GitHub.
+> <https://github.com/CriticAI-HE/AI-policies-dataset>
+
+For your convenience, we have also included a `CITATION.bib` file you
+may want to use to import it to your Reference Manager.
+
+``` bibtex
+@dataset{wangUKUniversitiesAI2026,
+  title = {{{UK Universities}}' {{AI Policy Documents Dataset}}},
+  author = {Wang, Chenlu and {C{\'a}mara-Menoyo}, Carlos},
+  year = 2026,
+  month = aug,
+  publisher = {GitHub},
+  langid = {english},
+  url = {https://github.com/CriticAI-HE/AI-policies-dataset}
+}
+```
+
+If you just want to use the data, there’s no need to install anything.
+You can either visit the companion website with metadata and download
+links, or simply navigate through the files within `data/` folder and
+download them from there, or from the public website.
+
+## Acknowledgements
+
+This is an output of Carlos Camara-Menoyo’s [SSI
+Fellowhip](https://www.software.ac.uk/news/introducing-2026-fellowship-cohort-insights-and-celebrations),
+funded by the [Software Sustainability
+Institute](https://www.software.ac.uk/).
+
+Most of the initial work of identifying, documenting and categorising
+the datasets has been done by Chenlu Wang, through the University of
+Warwick’s [Centre for Interdisciplinary
+Methodologies](https://warwick.ac.uk/cim)’ Research Assistance Scheme,
+between June and August 2026.
+
+## Contributing to this dataset
+
+We are welcoming contributions from anyone wanting to improve the
+coverage of this dataset.
+
+If you are interested in running the code to replicate this repo, you
+will need to:
+
+1.  Clone this repo
+    `git clone git@github.com:WarwickCIM/cyberexpertisediversity_survey_data.git`
+2.  Install dependencies running `renv::restore()`
