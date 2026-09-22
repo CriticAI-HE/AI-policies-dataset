@@ -7,6 +7,7 @@ output:
 <!-- Render a md version by knitting the document to md running -->
 
 <!-- Badges [![](https://img.shields.io/badge/)](https://doi.org/) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22898314.svg)](https://doi.org/10.5281/zenodo.22898314)
 
 ```{r, include = FALSE}
 data <- read.csv("data/UK_Universities_AI_Policies_Dataset.csv")

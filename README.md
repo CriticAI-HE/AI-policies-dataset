@@ -3,6 +3,8 @@
 
 <!-- Badges [![](https://img.shields.io/badge/)](https://doi.org/) -->
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22898314.svg)](https://doi.org/10.5281/zenodo.22898314)
+
 # UK Universities’ AI Policy Documents Dataset
 
 This repository contains a dataset compiling academic governance
