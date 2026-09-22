@@ -66,11 +66,10 @@ download them from there, or from the public website.
 
 ## Acknowledgements
 
-This is an output of Carlos Camara-Menoyo’s [Institute for Research
-Software’s
-Fellowhip](https://www.software.ac.uk/news/introducing-2026-fellowship-cohort-insights-and-celebrations),
-funded by the [Software Sustainability
-Institute](https://www.software.ac.uk/).
+This is an output of Carlos Camara-Menoyo’s
+[Fellowhip](https://www.software.ac.uk/news/introducing-2026-fellowship-cohort-insights-and-celebrations),
+funded by the [Institute for Research
+Software](https://www.software.ac.uk/).
 
 A pilot of this dataset was created during the [SSI’s Collaboration
 Workshop
@@ -92,7 +91,7 @@ While we implement a more user friendly workflow, contributions can be
 made editing file `data/UK_Universities_AI_Policies_Dataset.csv` and
 submit a Pull Request or send it over email.
 
-> \[!warning\] For contributions, please read the criteria on how to
+> \[!WARNING\] For contributions, please read the criteria on how to
 > correctly use the categories that can be found in the metadata
 > section.
 
