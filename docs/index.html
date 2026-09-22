@@ -1,0 +1,574 @@
+<html>
+  <head>
+    <title>UK Universities' AI Policy Documents Dataset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+      {
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "UK Universities' AI Policy Documents Dataset",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "0000-0002-9378-0549",
+      "email": "carlos.camara@warwick.ac.uk",
+      "affiliation": "University of Warwick",
+      "name": "Carlos Cámara-Menoyo"
+    },
+    {
+      "type": "Person",
+      "id": "0009-0008-1450-6770",
+      "email": null,
+      "affiliation": "University of Warwick",
+      "name": "Chenlu Wang"
+    }
+  ],
+  "description": "Dataset compiling academic governance documents detailing artificial intelligence policies and usage guidelines issued by universities across the United Kingdom. Compiled from public institutional sources (see datasources below), the collection includes formal policy and guidance statements addressing the use of AI tools in teaching, learning, assessment, and/or scholarly activities. Each document has been manually reviewed and annotated with metadata describing aspects of its contents, aims, audience and position on AI usage to allow for comparisons, systematic analysis and to inform decisions. Researchers and policymakers are the primary audience.",
+  "datePublished": "2026-09-30",
+  "keywords": ["AI", "Policies", "Higher Education", "UK"],
+  "funder": "Institute for Research Software, Centre for Interdisciplinary Methodologies",
+  "temporalCoverage": "2026-06-01/2026-09-22",
+  "license": "CC-BY-SA",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "United Kingdom",
+    "geo": {
+      "type": "GeoShape",
+      "box": "60.8566 2.24 49.47 -14.22"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Record ID",
+      "description": "Record's unique identifier"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "University",
+      "description": "Name of the university or organisation responsible for the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Institution Type",
+      "description": "Type of institution using controlled vocabulary: University; Consortium; Sector Organisation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Boolean",
+      "name": "Russell Group",
+      "description": "Whether the institution is a member of the Russell Group"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "UK Nation",
+      "description": "UK nation of the institution: England; Scotland; Wales; Northern Ireland; N/A"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Category",
+      "description": "Primary policy category using controlled vocabulary: generic; teaching; research; process"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Document Title",
+      "description": "Official title of the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Document Type",
+      "description": "Type of document, such as Policy; Guidance; Principles; Guidance hub"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Intended_Audience",
+      "description": "Main intended audience of the policy/guidance document, such as Students; Staff; Researchers; Institutions"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "URL",
+      "description": "Official URL or source location of the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "File Format",
+      "description": "Format of the source document or webpage"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Date",
+      "name": "Retrieval Date",
+      "description": "Date when the policy/guidance document was accessed or retrieved"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Status",
+      "description": "Availability status of the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Source_Type",
+      "description": "Type of source providing the document, e.g. Official"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Date",
+      "name": "Last_Updated",
+      "description": "Date when the policy/guidance document was last updated, if available"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Notes",
+      "description": "Additional contextual information, including document selection rationale or special notes"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "AI_Characterisation",
+      "description": "How AI is framed in the document, including Tool; Opportunity; Risk; Challenge; Transformative Technology"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Aim_Prevention",
+      "description": "Risks or problems the document aims to prevent, such as Academic Misconduct, Privacy Risk, Bias, or Copyright Risk"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Aim_Encouragement",
+      "description": "Positive objectives promoted by the document, such as AI Literacy, Responsible AI Use, Teaching Innovation, or Research Support"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Uses_Allowed",
+      "description": "AI uses explicitly permitted or encouraged by the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Uses_Disallowed",
+      "description": "AI uses restricted or prohibited by the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Technologies_Mentioned",
+      "description": "AI technologies, tools, or systems explicitly mentioned in the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Coding_Mentioned",
+      "description": "Level of programming/coding guidance provided: False; Mentioned; Guidance provided"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Overall_Tone",
+      "description": "Overall policy stance towards AI, e.g. Supportive; Balanced; Cautious; Restrictive"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Key_Takeaways",
+      "description": "Main insights or contributions of the policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Missing_Topics",
+      "description": "Important AI-related areas not covered or insufficiently addressed"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Unclear_Areas",
+      "description": "Areas where the policy/guidance lacks clarity or requires interpretation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Suggested_Additions",
+      "description": "Potential additions or improvements suggested for the policy/guidance"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Suggested_Reductions",
+      "description": "Content or elements that could potentially be reduced"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Coding_Recommendations",
+      "description": "Recommendations related to coding/programming guidance"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "UK_Universities_AI_Policies_Dataset",
+      "contentUrl": "https://github.com/CriticAI-HE/AI-policies-dataset/raw/refs/heads/main/data/UK_Universities_AI_Policies_Dataset.csv",
+      "encodingFormat": "csv"
+    }
+  ]
+}
+
+    </script>
+    <style>
+      body {
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 960px;
+      }
+
+      #map {
+        height: 20rem;
+      }
+
+      #attributes-wrapper,
+      #jsonld-wrapper {
+        /* height: 20rem; */
+        overflow-y: scroll;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      table th:first-child, table td:first-child {
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      table th:first-child, table td:first-child:hover {
+        /* overflow: visible;
+        background-color: #fff; */
+        max-width: 950px;
+      }
+
+      table td:first-child {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      th {
+        border-bottom: 1px solid black;
+        background-color: white;
+        position: sticky;
+        top: 0; /* Don't forget this, required for the stickiness */
+      }
+
+      th, td {
+        padding: 0.25rem;
+      }
+
+      table.listing td {
+        border: 1px solid #CCC;
+      }
+
+      table.listing tr td:first-child {
+          background-color: #EEE;
+      }
+
+      table.listing ul {
+        margin: 0 0 0 1.5rem;
+        padding: 0;
+      }
+
+      tr:nth-child(even) {
+        background-color: rgb(233, 243, 240);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>UK Universities' AI Policy Documents Dataset</h1>
+    <p><strong>Description:</strong> Dataset compiling academic governance documents detailing artificial intelligence policies and usage guidelines issued by universities across the United Kingdom. Compiled from public institutional sources (see datasources below), the collection includes formal policy and guidance statements addressing the use of AI tools in teaching, learning, assessment, and/or scholarly activities. Each document has been manually reviewed and annotated with metadata describing aspects of its contents, aims, audience and position on AI usage to allow for comparisons, systematic analysis and to inform decisions. Researchers and policymakers are the primary audience.</p>
+
+    <h2>Bibliographic</h2>
+
+    <table class="listing">
+      <tr>
+        <td>Creators</td>
+        <!-- <td>list(type = &quot;Person&quot;, id = &quot;0000-0002-9378-0549&quot;, email = &quot;carlos.camara@warwick.ac.uk&quot;, affiliation = &quot;University of Warwick&quot;, name = &quot;Carlos Cámara-Menoyo&quot;),list(type = &quot;Person&quot;, id = &quot;0009-0008-1450-6770&quot;, email = NULL, affiliation = &quot;University of Warwick&quot;, name = &quot;Chenlu Wang&quot;)</td> -->
+        <td><a href="https://orcid.org/0000-0002-9378-0549">Carlos Cámara-Menoyo</a>, <a href="https://orcid.org/0009-0008-1450-6770">Chenlu Wang</a></td>
+      </tr>
+      <tr>
+        <td>Published</td>
+        <td>2026-09-30</td>
+      </tr>
+
+      <tr>
+        <td>Keywords</td>
+        <td>
+          <ul>
+            <li>AI</li>
+            <li>Policies</li>
+            <li>Higher Education</li>
+            <li>UK</li>
+        </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Funder</td>
+        <td>Institute for Research Software, Centre for Interdisciplinary Methodologies</td>
+      </tr>
+      <tr>
+        <td>License</td>
+        <td>CC-BY-SA</td>
+      </tr>
+      <tr>
+        <td>Repository</td>
+        <td><a href="https://github.com/WarwickCIM/drtp-contributions-dataset">https://github.com/WarwickCIM/drtp-contributions-dataset</a></td>
+      </tr>
+    </table>
+
+     <h2>Distribution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Format</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>UK_Universities_AI_Policies_Dataset</code></td>
+          <td><code>csv</code></td>
+          <td><a href="https://github.com/CriticAI-HE/AI-policies-dataset/raw/refs/heads/main/data/UK_Universities_AI_Policies_Dataset.csv">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Coverage</h2>
+
+    <h3>Temporal</h3>
+
+    <table class="listing">
+      <tr>
+        <td>Begin</td>
+        <td>2026-06-01</td>
+      </tr>
+      <tr>
+        <td>End</td>
+        <td>2026-09-22</td>
+      </tr>
+    </table>
+
+    <h3>Spatial</h3>
+    <pre><code></code></pre>
+    <div id="map"></div>
+
+    <h2>Attributes</h2>
+
+    <div id="attributes-wrapper">
+      <table id="attributes">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Record ID</code></td>
+            <td>Record's unique identifier</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>University</code></td>
+            <td>Name of the university or organisation responsible for the AI policy/guidance document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Institution Type</code></td>
+            <td>Type of institution using controlled vocabulary: University; Consortium; Sector Organisation</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Russell Group</code></td>
+            <td>Whether the institution is a member of the Russell Group</td>
+            <td>Boolean</td>
+          </tr>
+          <tr>
+            <td><code>UK Nation</code></td>
+            <td>UK nation of the institution: England; Scotland; Wales; Northern Ireland; N/A</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Category</code></td>
+            <td>Primary policy category using controlled vocabulary: generic; teaching; research; process</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Document Title</code></td>
+            <td>Official title of the AI policy/guidance document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Document Type</code></td>
+            <td>Type of document, such as Policy; Guidance; Principles; Guidance hub</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Intended_Audience</code></td>
+            <td>Main intended audience of the policy/guidance document, such as Students; Staff; Researchers; Institutions</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>URL</code></td>
+            <td>Official URL or source location of the AI policy/guidance document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>File Format</code></td>
+            <td>Format of the source document or webpage</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Retrieval Date</code></td>
+            <td>Date when the policy/guidance document was accessed or retrieved</td>
+            <td>Date</td>
+          </tr>
+          <tr>
+            <td><code>Status</code></td>
+            <td>Availability status of the document</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Source_Type</code></td>
+            <td>Type of source providing the document, e.g. Official</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Last_Updated</code></td>
+            <td>Date when the policy/guidance document was last updated, if available</td>
+            <td>Date</td>
+          </tr>
+          <tr>
+            <td><code>Notes</code></td>
+            <td>Additional contextual information, including document selection rationale or special notes</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>AI_Characterisation</code></td>
+            <td>How AI is framed in the document, including Tool; Opportunity; Risk; Challenge; Transformative Technology</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Aim_Prevention</code></td>
+            <td>Risks or problems the document aims to prevent, such as Academic Misconduct, Privacy Risk, Bias, or Copyright Risk</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Aim_Encouragement</code></td>
+            <td>Positive objectives promoted by the document, such as AI Literacy, Responsible AI Use, Teaching Innovation, or Research Support</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Uses_Allowed</code></td>
+            <td>AI uses explicitly permitted or encouraged by the document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Uses_Disallowed</code></td>
+            <td>AI uses restricted or prohibited by the document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Technologies_Mentioned</code></td>
+            <td>AI technologies, tools, or systems explicitly mentioned in the document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Coding_Mentioned</code></td>
+            <td>Level of programming/coding guidance provided: False; Mentioned; Guidance provided</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Overall_Tone</code></td>
+            <td>Overall policy stance towards AI, e.g. Supportive; Balanced; Cautious; Restrictive</td>
+            <td>String (closed choice)</td>
+          </tr>
+          <tr>
+            <td><code>Key_Takeaways</code></td>
+            <td>Main insights or contributions of the policy/guidance document</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Missing_Topics</code></td>
+            <td>Important AI-related areas not covered or insufficiently addressed</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Unclear_Areas</code></td>
+            <td>Areas where the policy/guidance lacks clarity or requires interpretation</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Suggested_Additions</code></td>
+            <td>Potential additions or improvements suggested for the policy/guidance</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Suggested_Reductions</code></td>
+            <td>Content or elements that could potentially be reduced</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td><code>Coding_Recommendations</code></td>
+            <td>Recommendations related to coding/programming guidance</td>
+            <td>String</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div>
+      <h2>Licence</h2>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+    </div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+    <script>
+      var mymap = L.map('map').setView([55.1633, -5.99], 1);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        maxZoom: 18,
+      }).addTo(mymap);
+
+      var polygon = L.polygon([[ 60.8566, 2.24], [ 49.47, 2.24], [ 49.47, -14.22], [ 60.8566, -14.22]]).addTo(mymap);
+    </script>
+  </body>
+</html>

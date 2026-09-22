@@ -1,0 +1,31 @@
+fileName,variableName,description,unitText
+UK_Universities_AI_Policies_Dataset.csv,Record ID,Record's unique identifier,String
+UK_Universities_AI_Policies_Dataset.csv,University,Name of the university or organisation responsible for the AI policy/guidance document,String
+UK_Universities_AI_Policies_Dataset.csv,Institution Type,Type of institution using controlled vocabulary: University; Consortium; Sector Organisation,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Russell Group,Whether the institution is a member of the Russell Group,Boolean
+UK_Universities_AI_Policies_Dataset.csv,UK Nation,UK nation of the institution: England; Scotland; Wales; Northern Ireland; N/A,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Category,Primary policy category using controlled vocabulary: generic; teaching; research; process,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Document Title,Official title of the AI policy/guidance document,String
+UK_Universities_AI_Policies_Dataset.csv,Document Type,"Type of document, such as Policy; Guidance; Principles; Guidance hub",String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Intended_Audience,"Main intended audience of the policy/guidance document, such as Students; Staff; Researchers; Institutions",String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,URL,Official URL or source location of the AI policy/guidance document,String
+UK_Universities_AI_Policies_Dataset.csv,File Format,Format of the source document or webpage,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Retrieval Date,Date when the policy/guidance document was accessed or retrieved,Date
+UK_Universities_AI_Policies_Dataset.csv,Status,Availability status of the document,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Source_Type,"Type of source providing the document, e.g. Official",String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Last_Updated,"Date when the policy/guidance document was last updated, if available",Date
+UK_Universities_AI_Policies_Dataset.csv,Notes,"Additional contextual information, including document selection rationale or special notes",String
+UK_Universities_AI_Policies_Dataset.csv,AI_Characterisation,"How AI is framed in the document, including Tool; Opportunity; Risk; Challenge; Transformative Technology",String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Aim_Prevention,"Risks or problems the document aims to prevent, such as Academic Misconduct, Privacy Risk, Bias, or Copyright Risk",String
+UK_Universities_AI_Policies_Dataset.csv,Aim_Encouragement,"Positive objectives promoted by the document, such as AI Literacy, Responsible AI Use, Teaching Innovation, or Research Support",String
+UK_Universities_AI_Policies_Dataset.csv,Uses_Allowed,AI uses explicitly permitted or encouraged by the document,String
+UK_Universities_AI_Policies_Dataset.csv,Uses_Disallowed,AI uses restricted or prohibited by the document,String
+UK_Universities_AI_Policies_Dataset.csv,Technologies_Mentioned,"AI technologies, tools, or systems explicitly mentioned in the document",String
+UK_Universities_AI_Policies_Dataset.csv,Coding_Mentioned,Level of programming/coding guidance provided: False; Mentioned; Guidance provided,String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Overall_Tone,"Overall policy stance towards AI, e.g. Supportive; Balanced; Cautious; Restrictive",String (closed choice)
+UK_Universities_AI_Policies_Dataset.csv,Key_Takeaways,Main insights or contributions of the policy/guidance document,String
+UK_Universities_AI_Policies_Dataset.csv,Missing_Topics,Important AI-related areas not covered or insufficiently addressed,String
+UK_Universities_AI_Policies_Dataset.csv,Unclear_Areas,Areas where the policy/guidance lacks clarity or requires interpretation,String
+UK_Universities_AI_Policies_Dataset.csv,Suggested_Additions,Potential additions or improvements suggested for the policy/guidance,String
+UK_Universities_AI_Policies_Dataset.csv,Suggested_Reductions,Content or elements that could potentially be reduced,String
+UK_Universities_AI_Policies_Dataset.csv,Coding_Recommendations,Recommendations related to coding/programming guidance,String

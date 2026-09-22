@@ -1,0 +1,225 @@
+{
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "UK Universities' AI Policy Documents Dataset",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "0000-0002-9378-0549",
+      "email": "carlos.camara@warwick.ac.uk",
+      "affiliation": "University of Warwick",
+      "name": "Carlos Cámara-Menoyo"
+    },
+    {
+      "type": "Person",
+      "id": "0009-0008-1450-6770",
+      "email": null,
+      "affiliation": "University of Warwick",
+      "name": "Chenlu Wang"
+    }
+  ],
+  "description": "Dataset compiling academic governance documents detailing artificial intelligence policies and usage guidelines issued by universities across the United Kingdom. Compiled from public institutional sources (see datasources below), the collection includes formal policy and guidance statements addressing the use of AI tools in teaching, learning, assessment, and/or scholarly activities. Each document has been manually reviewed and annotated with metadata describing aspects of its contents, aims, audience and position on AI usage to allow for comparisons, systematic analysis and to inform decisions. Researchers and policymakers are the primary audience.",
+  "datePublished": "2026-09-30",
+  "keywords": ["AI", "Policies", "Higher Education", "UK"],
+  "funder": "Institute for Research Software, Centre for Interdisciplinary Methodologies",
+  "temporalCoverage": "2026-06-01/2026-09-22",
+  "license": "CC-BY-SA",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "United Kingdom",
+    "geo": {
+      "type": "GeoShape",
+      "box": "60.8566 2.24 49.47 -14.22"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Record ID",
+      "description": "Record's unique identifier"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "University",
+      "description": "Name of the university or organisation responsible for the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Institution Type",
+      "description": "Type of institution using controlled vocabulary: University; Consortium; Sector Organisation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Boolean",
+      "name": "Russell Group",
+      "description": "Whether the institution is a member of the Russell Group"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "UK Nation",
+      "description": "UK nation of the institution: England; Scotland; Wales; Northern Ireland; N/A"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Category",
+      "description": "Primary policy category using controlled vocabulary: generic; teaching; research; process"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Document Title",
+      "description": "Official title of the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Document Type",
+      "description": "Type of document, such as Policy; Guidance; Principles; Guidance hub"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Intended_Audience",
+      "description": "Main intended audience of the policy/guidance document, such as Students; Staff; Researchers; Institutions"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "URL",
+      "description": "Official URL or source location of the AI policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "File Format",
+      "description": "Format of the source document or webpage"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Date",
+      "name": "Retrieval Date",
+      "description": "Date when the policy/guidance document was accessed or retrieved"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Status",
+      "description": "Availability status of the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Source_Type",
+      "description": "Type of source providing the document, e.g. Official"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Date",
+      "name": "Last_Updated",
+      "description": "Date when the policy/guidance document was last updated, if available"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Notes",
+      "description": "Additional contextual information, including document selection rationale or special notes"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "AI_Characterisation",
+      "description": "How AI is framed in the document, including Tool; Opportunity; Risk; Challenge; Transformative Technology"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Aim_Prevention",
+      "description": "Risks or problems the document aims to prevent, such as Academic Misconduct, Privacy Risk, Bias, or Copyright Risk"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Aim_Encouragement",
+      "description": "Positive objectives promoted by the document, such as AI Literacy, Responsible AI Use, Teaching Innovation, or Research Support"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Uses_Allowed",
+      "description": "AI uses explicitly permitted or encouraged by the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Uses_Disallowed",
+      "description": "AI uses restricted or prohibited by the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Technologies_Mentioned",
+      "description": "AI technologies, tools, or systems explicitly mentioned in the document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Coding_Mentioned",
+      "description": "Level of programming/coding guidance provided: False; Mentioned; Guidance provided"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String (closed choice)",
+      "name": "Overall_Tone",
+      "description": "Overall policy stance towards AI, e.g. Supportive; Balanced; Cautious; Restrictive"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Key_Takeaways",
+      "description": "Main insights or contributions of the policy/guidance document"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Missing_Topics",
+      "description": "Important AI-related areas not covered or insufficiently addressed"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Unclear_Areas",
+      "description": "Areas where the policy/guidance lacks clarity or requires interpretation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Suggested_Additions",
+      "description": "Potential additions or improvements suggested for the policy/guidance"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Suggested_Reductions",
+      "description": "Content or elements that could potentially be reduced"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "String",
+      "name": "Coding_Recommendations",
+      "description": "Recommendations related to coding/programming guidance"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "UK_Universities_AI_Policies_Dataset",
+      "contentUrl": "https://github.com/CriticAI-HE/AI-policies-dataset/raw/refs/heads/main/data/UK_Universities_AI_Policies_Dataset.csv",
+      "encodingFormat": "csv"
+    }
+  ]
+}
