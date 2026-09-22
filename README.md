@@ -1,5 +1,5 @@
 
-<!-- Render a md version by running -->
+<!-- Render a md version by knitting the document to md running -->
 
 <!-- Badges [![](https://img.shields.io/badge/)](https://doi.org/) -->
 
@@ -40,8 +40,8 @@ decisions. Researchers and policymakers are the primary audience.
 You are free to reuse this dataset under the Licence conditions. If you
 use this dataset in your work, please cite it as below:
 
-> Wang, C., & Cámara-Menoyo, C. (2026). UK Universities’ AI Policy
-> Documents Dataset $$Data set$$. GitHub.
+> Cámara-Menoyo, C. & Wang, C. (2026). UK Universities’ AI Policy
+> Documents Dataset \[Data set\]. GitHub.
 > <https://github.com/CriticAI-HE/AI-policies-dataset>
 
 For your convenience, we have also included a `CITATION.bib` file you
@@ -50,9 +50,9 @@ may want to use to import it to your Reference Manager.
 ``` bibtex
 @dataset{wangUKUniversitiesAI2026,
   title = {{{UK Universities}}' {{AI Policy Documents Dataset}}},
-  author = {Wang, Chenlu and {C{\'a}mara-Menoyo}, Carlos},
+  author = {{C{\'a}mara-Menoyo}, Carlos and Wang, Chenlu},
   year = 2026,
-  month = aug,
+  month = sept,
   publisher = {GitHub},
   langid = {english},
   url = {https://github.com/CriticAI-HE/AI-policies-dataset}
@@ -66,12 +66,18 @@ download them from there, or from the public website.
 
 ## Acknowledgements
 
-This is an output of Carlos Camara-Menoyo’s [SSI
+This is an output of Carlos Camara-Menoyo’s [Institute for Research
+Software’s
 Fellowhip](https://www.software.ac.uk/news/introducing-2026-fellowship-cohort-insights-and-celebrations),
 funded by the [Software Sustainability
 Institute](https://www.software.ac.uk/).
 
-Most of the initial work of identifying, documenting and categorising
+A pilot of this dataset was created during the [SSI’s Collaboration
+Workshop
+(CW26)](https://www.software.ac.uk/workshop/collaborations-workshop-2026-cw26),
+which served to define the methodology.
+
+Most of the subsequent work of identifying, documenting and categorising
 the datasets has been done by Chenlu Wang, through the University of
 Warwick’s [Centre for Interdisciplinary
 Methodologies](https://warwick.ac.uk/cim)’ Research Assistance Scheme,
@@ -81,6 +87,16 @@ between June and August 2026.
 
 We are welcoming contributions from anyone wanting to improve the
 coverage of this dataset.
+
+While we implement a more user friendly workflow, contributions can be
+made editing file `data/UK_Universities_AI_Policies_Dataset.csv` and
+submit a Pull Request or send it over email.
+
+> \[!warning\] For contributions, please read the criteria on how to
+> correctly use the categories that can be found in the metadata
+> section.
+
+### Replicating the repository
 
 If you are interested in running the code to replicate this repo, you
 will need to:
